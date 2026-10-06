@@ -3,6 +3,7 @@ import { detectAnomalies } from "./lib/anomalies";
 import { parseCostCsv } from "./lib/csv";
 import { savingsIdeas } from "./lib/savings";
 import { UNTAGGED_TEAM, type CostRow, type Filters } from "./lib/types";
+import { weekOverWeek, type WeekOverWeek } from "./lib/weekOverWeek";
 
 const FILTERS_KEY = "cost-lens-filters";
 const CSV_KEY = "cost-lens-csv";
@@ -45,6 +46,22 @@ function esc(value: string): string {
 
 function formatUsd(amount: number): string {
   return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(amount);
+}
+
+function formatSignedUsd(amount: number): string {
+  const formatted = formatUsd(amount);
+  return amount > 0 ? `+${formatted}` : formatted;
+}
+
+function formatChangePct(changePct: number): string {
+  const pct = (changePct * 100).toFixed(1);
+  return changePct > 0 ? `+${pct}%` : `${pct}%`;
+}
+
+function weekHint(result: WeekOverWeek): string {
+  const dollars = formatSignedUsd(result.changeUsd);
+  if (result.changePct === null) return `${dollars} vs previous 7 days`;
+  return `${dollars} (${formatChangePct(result.changePct)}) vs previous 7 days`;
 }
 
 function formatDay(iso: string): string {
@@ -97,6 +114,7 @@ function barChart(title: string, items: SpendBar[]): string {
 function render(errors: string[] = []): void {
   const rows = filterRows(allRows, filters);
   const summary = summarize(rows);
+  const week = weekOverWeek(rows);
   const byService = spendBy(rows, "service");
   const byTeam = spendBy(rows, "teamTag");
   const anomalies = detectAnomalies(rows);
@@ -203,6 +221,11 @@ function render(errors: string[] = []): void {
         <h2>Untagged</h2>
         <p class="metric">${summary.untaggedPct.toFixed(1)}%</p>
         <p class="hint">${esc(formatUsd(summary.untaggedCost))}</p>
+      </article>
+      <article class="card">
+        <h2>Last 7 days</h2>
+        <p class="metric">${week ? esc(formatUsd(week.currentUsd)) : "—"}</p>
+        <p class="hint">${week ? esc(weekHint(week)) : "No spend in this view"}</p>
       </article>
     </section>
     <section class="charts">
