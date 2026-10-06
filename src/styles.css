@@ -1,0 +1,279 @@
+:root {
+  --bg: #f7f7f4;
+  --fg: #26251e;
+  --muted: rgba(38, 37, 30, 0.6);
+  --accent: #f54e00;
+  --card: #f2f1ed;
+  --card-02: #ebeae5;
+  --card-03: #e6e5e0;
+  --line: #e1e0db;
+  --danger: #9a3412;
+  color: var(--fg);
+  background: var(--bg);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+select,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+#app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 20px 48px;
+}
+
+.loading {
+  color: var(--muted);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.eyebrow,
+.sub,
+.hint,
+.bar-note {
+  margin: 0;
+  color: var(--muted);
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.file,
+button,
+select {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.file {
+  position: relative;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.file input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button:hover,
+.file:hover,
+select:hover {
+  background: var(--card-02);
+}
+
+button:focus-visible,
+select:focus-visible,
+.file:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+select {
+  min-width: 180px;
+  padding: 8px 10px;
+}
+
+.cards,
+.charts,
+.lists {
+  display: grid;
+  gap: 12px;
+}
+
+.cards {
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 12px;
+}
+
+.charts,
+.lists {
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 12px;
+}
+
+.card,
+.panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.metric {
+  margin: 8px 0 0;
+  font-size: 28px;
+  letter-spacing: -0.03em;
+}
+
+.panel h2 {
+  margin-bottom: 12px;
+}
+
+.chart text {
+  fill: var(--fg);
+  font-size: 12px;
+  font-family: inherit;
+}
+
+.chart .muted {
+  fill: var(--muted);
+}
+
+.track {
+  fill: var(--card-03);
+}
+
+.fill {
+  fill: var(--accent);
+}
+
+.empty {
+  margin: 0;
+  color: var(--muted);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 6px 8px 6px 0;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+th {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.idea + .idea {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.idea h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.idea p {
+  margin: 0;
+}
+
+.estimate {
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.estimate span {
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: lowercase;
+}
+
+.banner {
+  background: var(--card-02);
+  border-left: 4px solid var(--danger);
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+}
+
+.banner p {
+  margin: 0 0 8px;
+}
+
+.banner ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+@media (max-width: 800px) {
+  header,
+  .filters,
+  .cards,
+  .charts,
+  .lists {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    align-items: stretch;
+  }
+}
