@@ -40,8 +40,8 @@ export function parseCostCsv(text: string): CostRow[] {
     if (!region) throw new CsvParseError(`Missing region on row ${rowNumber}`);
 
     const costUsd = Number(costRaw);
-    if (!Number.isFinite(costUsd)) {
-      throw new CsvParseError(`Invalid cost_usd on row ${rowNumber}: ${costRaw}`);
+    if (costRaw === "" || !Number.isFinite(costUsd)) {
+      throw new CsvParseError(`Invalid cost_usd on row ${rowNumber}: ${costRaw || "(empty)"}`);
     }
 
     rows.push({ date, service, region, teamTag, costUsd });

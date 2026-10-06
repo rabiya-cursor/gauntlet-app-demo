@@ -47,6 +47,7 @@ fileInput.addEventListener("change", () => {
 void boot();
 
 async function boot(): Promise<void> {
+  render();
   try {
     const response = await fetch("/sample-costs.csv");
     if (!response.ok) throw new Error(`Sample CSV failed to load (${response.status})`);
@@ -132,6 +133,8 @@ function render(): void {
     ? "Loading sample costs…"
     : `${formatPeriod(filtered.map((row) => row.date))} · ${source === "sample" ? "Sample data" : "Uploaded CSV"}`;
   filterBar.append(period);
+  app.append(masthead, filterBar);
+  if (loading) return;
 
   const cards = document.createElement("section");
   cards.className = "cards";
@@ -166,7 +169,6 @@ function render(): void {
   lower.className = "grid";
   lower.append(anomalyPanel(anomalies), savingsPanel(ideas));
 
-  app.append(masthead, filterBar);
   if (error) {
     const banner = document.createElement("p");
     banner.className = "banner";

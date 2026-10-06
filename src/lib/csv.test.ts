@@ -31,6 +31,13 @@ describe("parseCostCsv", () => {
     expect(() => parseCostCsv(`${header}09/01/2026,EC2,us-east-1,payments,1\n`)).toThrow(/date/);
   });
 
+  it("rejects an empty cost instead of storing it as zero", () => {
+    const header = "date,service,region,team_tag,cost_usd\n";
+    expect(() => parseCostCsv(`${header}2026-09-01,EC2,us-east-1,payments,\n`)).toThrow(/cost_usd/);
+    expect(() => parseCostCsv(`${header}2026-09-01,EC2,us-east-1,payments,   \n`)).toThrow(/cost_usd/);
+    expect(parseCostCsv(`${header}2026-09-01,EC2,us-east-1,payments,0\n`)[0].costUsd).toBe(0);
+  });
+
   it("loads the sample file: 30 days, 8 services, 2 regions", () => {
     const rows = parseCostCsv(readFileSync(samplePath, "utf8"));
     expect(new Set(rows.map((row) => row.date)).size).toBe(30);
