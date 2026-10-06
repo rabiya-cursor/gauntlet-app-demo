@@ -1,0 +1,481 @@
+date,service,region,team_tag,cost_usd
+2026-09-01,EC2,us-east-1,payments,432.60
+2026-09-01,EC2,us-west-2,,97.85
+2026-09-01,RDS,us-east-1,payments,191.58
+2026-09-01,RDS,us-west-2,platform,45.32
+2026-09-01,S3,us-east-1,,11.33
+2026-09-01,S3,us-west-2,,5.67
+2026-09-01,EBS,us-east-1,platform,49.44
+2026-09-01,EBS,us-west-2,,14.42
+2026-09-01,Lambda,us-east-1,,7.73
+2026-09-01,Lambda,us-west-2,search,3.30
+2026-09-01,CloudFront,us-east-1,search,24.72
+2026-09-01,CloudFront,us-west-2,search,9.27
+2026-09-01,NAT Gateway,us-east-1,platform,37.08
+2026-09-01,NAT Gateway,us-west-2,search,14.42
+2026-09-01,DynamoDB,us-east-1,payments,18.54
+2026-09-01,DynamoDB,us-west-2,,6.59
+2026-09-02,EC2,us-east-1,payments,448.27
+2026-09-02,EC2,us-west-2,,101.39
+2026-09-02,RDS,us-east-1,payments,198.52
+2026-09-02,RDS,us-west-2,platform,46.96
+2026-09-02,S3,us-east-1,,11.74
+2026-09-02,S3,us-west-2,,5.87
+2026-09-02,EBS,us-east-1,platform,51.23
+2026-09-02,EBS,us-west-2,,14.94
+2026-09-02,Lambda,us-east-1,,8.00
+2026-09-02,Lambda,us-west-2,search,3.42
+2026-09-02,CloudFront,us-east-1,search,25.62
+2026-09-02,CloudFront,us-west-2,search,9.61
+2026-09-02,NAT Gateway,us-east-1,platform,38.42
+2026-09-02,NAT Gateway,us-west-2,search,14.94
+2026-09-02,DynamoDB,us-east-1,payments,19.21
+2026-09-02,DynamoDB,us-west-2,,6.83
+2026-09-03,EC2,us-east-1,payments,455.23
+2026-09-03,EC2,us-west-2,,102.97
+2026-09-03,RDS,us-east-1,payments,201.60
+2026-09-03,RDS,us-west-2,platform,47.69
+2026-09-03,S3,us-east-1,,11.92
+2026-09-03,S3,us-west-2,,5.96
+2026-09-03,EBS,us-east-1,platform,52.03
+2026-09-03,EBS,us-west-2,,15.17
+2026-09-03,Lambda,us-east-1,,8.13
+2026-09-03,Lambda,us-west-2,search,3.47
+2026-09-03,CloudFront,us-east-1,search,26.01
+2026-09-03,CloudFront,us-west-2,search,9.75
+2026-09-03,NAT Gateway,us-east-1,platform,39.02
+2026-09-03,NAT Gateway,us-west-2,search,15.17
+2026-09-03,DynamoDB,us-east-1,payments,19.51
+2026-09-03,DynamoDB,us-west-2,,6.94
+2026-09-04,EC2,us-east-1,payments,449.59
+2026-09-04,EC2,us-west-2,,101.69
+2026-09-04,RDS,us-east-1,payments,199.10
+2026-09-04,RDS,us-west-2,platform,47.10
+2026-09-04,S3,us-east-1,,11.77
+2026-09-04,S3,us-west-2,,5.89
+2026-09-04,EBS,us-east-1,platform,51.38
+2026-09-04,EBS,us-west-2,,14.99
+2026-09-04,Lambda,us-east-1,,8.03
+2026-09-04,Lambda,us-west-2,search,3.43
+2026-09-04,CloudFront,us-east-1,search,25.69
+2026-09-04,CloudFront,us-west-2,search,9.63
+2026-09-04,NAT Gateway,us-east-1,platform,38.54
+2026-09-04,NAT Gateway,us-west-2,search,14.99
+2026-09-04,DynamoDB,us-east-1,payments,19.27
+2026-09-04,DynamoDB,us-west-2,,6.85
+2026-09-05,EC2,us-east-1,payments,433.01
+2026-09-05,EC2,us-west-2,,97.94
+2026-09-05,RDS,us-east-1,payments,191.76
+2026-09-05,RDS,us-west-2,platform,45.36
+2026-09-05,S3,us-east-1,,11.34
+2026-09-05,S3,us-west-2,,5.67
+2026-09-05,EBS,us-east-1,platform,49.49
+2026-09-05,EBS,us-west-2,,14.43
+2026-09-05,Lambda,us-east-1,,7.73
+2026-09-05,Lambda,us-west-2,search,3.30
+2026-09-05,CloudFront,us-east-1,search,24.74
+2026-09-05,CloudFront,us-west-2,search,9.28
+2026-09-05,NAT Gateway,us-east-1,platform,37.11
+2026-09-05,NAT Gateway,us-west-2,search,14.43
+2026-09-05,DynamoDB,us-east-1,payments,18.56
+2026-09-05,DynamoDB,us-west-2,,6.60
+2026-09-06,EC2,us-east-1,payments,412.05
+2026-09-06,EC2,us-west-2,,93.20
+2026-09-06,RDS,us-east-1,payments,182.48
+2026-09-06,RDS,us-west-2,platform,43.17
+2026-09-06,S3,us-east-1,,10.79
+2026-09-06,S3,us-west-2,,5.40
+2026-09-06,EBS,us-east-1,platform,47.09
+2026-09-06,EBS,us-west-2,,13.74
+2026-09-06,Lambda,us-east-1,,7.36
+2026-09-06,Lambda,us-west-2,search,3.14
+2026-09-06,CloudFront,us-east-1,search,23.55
+2026-09-06,CloudFront,us-west-2,search,8.83
+2026-09-06,NAT Gateway,us-east-1,platform,35.32
+2026-09-06,NAT Gateway,us-west-2,search,13.74
+2026-09-06,DynamoDB,us-east-1,payments,17.66
+2026-09-06,DynamoDB,us-west-2,,6.28
+2026-09-07,EC2,us-east-1,payments,395.17
+2026-09-07,EC2,us-west-2,,89.38
+2026-09-07,RDS,us-east-1,payments,175.01
+2026-09-07,RDS,us-west-2,platform,41.40
+2026-09-07,S3,us-east-1,,10.35
+2026-09-07,S3,us-west-2,,5.17
+2026-09-07,EBS,us-east-1,platform,45.16
+2026-09-07,EBS,us-west-2,,13.17
+2026-09-07,Lambda,us-east-1,,7.06
+2026-09-07,Lambda,us-west-2,search,3.01
+2026-09-07,CloudFront,us-east-1,search,22.58
+2026-09-07,CloudFront,us-west-2,search,8.47
+2026-09-07,NAT Gateway,us-east-1,platform,33.87
+2026-09-07,NAT Gateway,us-west-2,search,13.17
+2026-09-07,DynamoDB,us-east-1,payments,16.94
+2026-09-07,DynamoDB,us-west-2,,6.02
+2026-09-08,EC2,us-east-1,payments,388.88
+2026-09-08,EC2,us-west-2,,87.96
+2026-09-08,RDS,us-east-1,payments,172.22
+2026-09-08,RDS,us-west-2,platform,40.74
+2026-09-08,S3,us-east-1,,10.18
+2026-09-08,S3,us-west-2,,5.09
+2026-09-08,EBS,us-east-1,platform,44.44
+2026-09-08,EBS,us-west-2,,12.96
+2026-09-08,Lambda,us-east-1,,6.94
+2026-09-08,Lambda,us-west-2,search,2.96
+2026-09-08,CloudFront,us-east-1,search,22.22
+2026-09-08,CloudFront,us-west-2,search,8.33
+2026-09-08,NAT Gateway,us-east-1,platform,33.33
+2026-09-08,NAT Gateway,us-west-2,search,12.96
+2026-09-08,DynamoDB,us-east-1,payments,16.67
+2026-09-08,DynamoDB,us-west-2,,5.93
+2026-09-09,EC2,us-east-1,payments,394.80
+2026-09-09,EC2,us-west-2,,89.30
+2026-09-09,RDS,us-east-1,payments,174.84
+2026-09-09,RDS,us-west-2,platform,41.36
+2026-09-09,S3,us-east-1,,10.34
+2026-09-09,S3,us-west-2,,5.17
+2026-09-09,EBS,us-east-1,platform,45.12
+2026-09-09,EBS,us-west-2,,13.16
+2026-09-09,Lambda,us-east-1,,7.05
+2026-09-09,Lambda,us-west-2,search,3.01
+2026-09-09,CloudFront,us-east-1,search,22.56
+2026-09-09,CloudFront,us-west-2,search,8.46
+2026-09-09,NAT Gateway,us-east-1,platform,33.84
+2026-09-09,NAT Gateway,us-west-2,search,13.16
+2026-09-09,DynamoDB,us-east-1,payments,16.92
+2026-09-09,DynamoDB,us-west-2,,6.02
+2026-09-10,EC2,us-east-1,payments,409.03
+2026-09-10,EC2,us-west-2,,92.52
+2026-09-10,RDS,us-east-1,payments,181.14
+2026-09-10,RDS,us-west-2,platform,42.85
+2026-09-10,S3,us-east-1,,10.71
+2026-09-10,S3,us-west-2,,5.36
+2026-09-10,EBS,us-east-1,platform,46.75
+2026-09-10,EBS,us-west-2,,13.63
+2026-09-10,Lambda,us-east-1,,7.30
+2026-09-10,Lambda,us-west-2,search,3.12
+2026-09-10,CloudFront,us-east-1,search,23.37
+2026-09-10,CloudFront,us-west-2,search,8.76
+2026-09-10,NAT Gateway,us-east-1,platform,35.06
+2026-09-10,NAT Gateway,us-west-2,search,13.63
+2026-09-10,DynamoDB,us-east-1,payments,17.53
+2026-09-10,DynamoDB,us-west-2,,6.23
+2026-09-11,EC2,us-east-1,payments,424.08
+2026-09-11,EC2,us-west-2,,95.92
+2026-09-11,RDS,us-east-1,payments,187.81
+2026-09-11,RDS,us-west-2,platform,44.43
+2026-09-11,S3,us-east-1,,11.11
+2026-09-11,S3,us-west-2,,5.55
+2026-09-11,EBS,us-east-1,platform,48.47
+2026-09-11,EBS,us-west-2,,14.14
+2026-09-11,Lambda,us-east-1,,7.57
+2026-09-11,Lambda,us-west-2,search,3.23
+2026-09-11,CloudFront,us-east-1,search,24.23
+2026-09-11,CloudFront,us-west-2,search,9.09
+2026-09-11,NAT Gateway,us-east-1,platform,36.35
+2026-09-11,NAT Gateway,us-west-2,search,14.14
+2026-09-11,DynamoDB,us-east-1,payments,18.17
+2026-09-11,DynamoDB,us-west-2,,6.46
+2026-09-12,EC2,us-east-1,payments,432.46
+2026-09-12,EC2,us-west-2,,97.82
+2026-09-12,RDS,us-east-1,payments,191.52
+2026-09-12,RDS,us-west-2,platform,45.31
+2026-09-12,S3,us-east-1,,11.33
+2026-09-12,S3,us-west-2,,5.66
+2026-09-12,EBS,us-east-1,platform,49.42
+2026-09-12,EBS,us-west-2,,14.42
+2026-09-12,Lambda,us-east-1,,7.72
+2026-09-12,Lambda,us-west-2,search,3.29
+2026-09-12,CloudFront,us-east-1,search,24.71
+2026-09-12,CloudFront,us-west-2,search,9.27
+2026-09-12,NAT Gateway,us-east-1,platform,37.07
+2026-09-12,NAT Gateway,us-west-2,search,14.42
+2026-09-12,DynamoDB,us-east-1,payments,18.53
+2026-09-12,DynamoDB,us-west-2,,6.59
+2026-09-13,EC2,us-east-1,payments,430.24
+2026-09-13,EC2,us-west-2,,97.32
+2026-09-13,RDS,us-east-1,payments,190.53
+2026-09-13,RDS,us-west-2,platform,45.07
+2026-09-13,S3,us-east-1,,11.27
+2026-09-13,S3,us-west-2,,5.63
+2026-09-13,EBS,us-east-1,platform,49.17
+2026-09-13,EBS,us-west-2,,14.34
+2026-09-13,Lambda,us-east-1,,7.68
+2026-09-13,Lambda,us-west-2,search,3.28
+2026-09-13,CloudFront,us-east-1,search,24.58
+2026-09-13,CloudFront,us-west-2,search,9.22
+2026-09-13,NAT Gateway,us-east-1,platform,36.88
+2026-09-13,NAT Gateway,us-west-2,search,14.34
+2026-09-13,DynamoDB,us-east-1,payments,18.44
+2026-09-13,DynamoDB,us-west-2,,6.56
+2026-09-14,EC2,us-east-1,payments,418.89
+2026-09-14,EC2,us-west-2,,94.75
+2026-09-14,RDS,us-east-1,payments,185.51
+2026-09-14,RDS,us-west-2,platform,43.88
+2026-09-14,S3,us-east-1,,10.97
+2026-09-14,S3,us-west-2,,5.49
+2026-09-14,EBS,us-east-1,platform,47.87
+2026-09-14,EBS,us-west-2,,13.96
+2026-09-14,Lambda,us-east-1,,7.48
+2026-09-14,Lambda,us-west-2,search,3.19
+2026-09-14,CloudFront,us-east-1,search,23.94
+2026-09-14,CloudFront,us-west-2,search,8.98
+2026-09-14,NAT Gateway,us-east-1,platform,35.91
+2026-09-14,NAT Gateway,us-west-2,search,13.96
+2026-09-14,DynamoDB,us-east-1,payments,17.95
+2026-09-14,DynamoDB,us-west-2,,6.38
+2026-09-15,EC2,us-east-1,payments,404.59
+2026-09-15,EC2,us-west-2,,91.51
+2026-09-15,RDS,us-east-1,payments,179.17
+2026-09-15,RDS,us-west-2,platform,42.39
+2026-09-15,S3,us-east-1,,10.60
+2026-09-15,S3,us-west-2,,5.30
+2026-09-15,EBS,us-east-1,platform,46.24
+2026-09-15,EBS,us-west-2,,13.49
+2026-09-15,Lambda,us-east-1,,7.22
+2026-09-15,Lambda,us-west-2,search,3.08
+2026-09-15,CloudFront,us-east-1,search,23.12
+2026-09-15,CloudFront,us-west-2,search,8.67
+2026-09-15,NAT Gateway,us-east-1,platform,34.68
+2026-09-15,NAT Gateway,us-west-2,search,13.49
+2026-09-15,DynamoDB,us-east-1,payments,17.34
+2026-09-15,DynamoDB,us-west-2,,6.17
+2026-09-16,EC2,us-east-1,payments,395.18
+2026-09-16,EC2,us-west-2,,89.38
+2026-09-16,RDS,us-east-1,payments,175.01
+2026-09-16,RDS,us-west-2,platform,41.40
+2026-09-16,S3,us-east-1,,10.35
+2026-09-16,S3,us-west-2,,5.17
+2026-09-16,EBS,us-east-1,platform,45.16
+2026-09-16,EBS,us-west-2,,13.17
+2026-09-16,Lambda,us-east-1,,7.06
+2026-09-16,Lambda,us-west-2,search,3.01
+2026-09-16,CloudFront,us-east-1,search,22.58
+2026-09-16,CloudFront,us-west-2,search,8.47
+2026-09-16,NAT Gateway,us-east-1,platform,33.87
+2026-09-16,NAT Gateway,us-west-2,search,13.17
+2026-09-16,DynamoDB,us-east-1,payments,16.94
+2026-09-16,DynamoDB,us-west-2,,6.02
+2026-09-17,EC2,us-east-1,payments,396.43
+2026-09-17,EC2,us-west-2,,89.67
+2026-09-17,RDS,us-east-1,payments,175.56
+2026-09-17,RDS,us-west-2,platform,41.53
+2026-09-17,S3,us-east-1,,10.38
+2026-09-17,S3,us-west-2,,5.19
+2026-09-17,EBS,us-east-1,platform,45.31
+2026-09-17,EBS,us-west-2,,13.21
+2026-09-17,Lambda,us-east-1,,7.08
+2026-09-17,Lambda,us-west-2,search,3.02
+2026-09-17,CloudFront,us-east-1,search,22.65
+2026-09-17,CloudFront,us-west-2,search,8.49
+2026-09-17,NAT Gateway,us-east-1,platform,33.98
+2026-09-17,NAT Gateway,us-west-2,search,13.21
+2026-09-17,DynamoDB,us-east-1,payments,16.99
+2026-09-17,DynamoDB,us-west-2,,6.04
+2026-09-18,EC2,us-east-1,payments,409.19
+2026-09-18,EC2,us-west-2,,92.55
+2026-09-18,RDS,us-east-1,payments,181.21
+2026-09-18,RDS,us-west-2,platform,42.87
+2026-09-18,S3,us-east-1,,10.72
+2026-09-18,S3,us-west-2,,5.36
+2026-09-18,EBS,us-east-1,platform,46.76
+2026-09-18,EBS,us-west-2,,13.64
+2026-09-18,Lambda,us-east-1,,7.31
+2026-09-18,Lambda,us-west-2,search,3.12
+2026-09-18,CloudFront,us-east-1,search,23.38
+2026-09-18,CloudFront,us-west-2,search,8.77
+2026-09-18,NAT Gateway,us-east-1,platform,35.07
+2026-09-18,NAT Gateway,us-west-2,search,13.64
+2026-09-18,DynamoDB,us-east-1,payments,17.54
+2026-09-18,DynamoDB,us-west-2,,6.24
+2026-09-19,EC2,us-east-1,payments,428.84
+2026-09-19,EC2,us-west-2,,97.00
+2026-09-19,RDS,us-east-1,payments,189.92
+2026-09-19,RDS,us-west-2,platform,44.93
+2026-09-19,S3,us-east-1,,11.23
+2026-09-19,S3,us-west-2,,5.62
+2026-09-19,EBS,us-east-1,platform,49.01
+2026-09-19,EBS,us-west-2,,14.29
+2026-09-19,Lambda,us-east-1,,7.66
+2026-09-19,Lambda,us-west-2,search,3.27
+2026-09-19,CloudFront,us-east-1,search,24.51
+2026-09-19,CloudFront,us-west-2,search,9.19
+2026-09-19,NAT Gateway,us-east-1,platform,36.76
+2026-09-19,NAT Gateway,us-west-2,search,14.29
+2026-09-19,DynamoDB,us-east-1,payments,18.38
+2026-09-19,DynamoDB,us-west-2,,6.53
+2026-09-20,EC2,us-east-1,payments,447.39
+2026-09-20,EC2,us-west-2,,101.20
+2026-09-20,RDS,us-east-1,payments,198.13
+2026-09-20,RDS,us-west-2,platform,46.87
+2026-09-20,S3,us-east-1,,11.72
+2026-09-20,S3,us-west-2,,5.86
+2026-09-20,EBS,us-east-1,platform,51.13
+2026-09-20,EBS,us-west-2,,14.91
+2026-09-20,Lambda,us-east-1,,7.99
+2026-09-20,Lambda,us-west-2,search,3.41
+2026-09-20,CloudFront,us-east-1,search,25.57
+2026-09-20,CloudFront,us-west-2,search,9.59
+2026-09-20,NAT Gateway,us-east-1,platform,38.35
+2026-09-20,NAT Gateway,us-west-2,search,14.91
+2026-09-20,DynamoDB,us-east-1,payments,19.17
+2026-09-20,DynamoDB,us-west-2,,6.82
+2026-09-21,EC2,us-east-1,payments,457.06
+2026-09-21,EC2,us-west-2,,103.38
+2026-09-21,RDS,us-east-1,payments,202.41
+2026-09-21,RDS,us-west-2,platform,47.88
+2026-09-21,S3,us-east-1,,11.97
+2026-09-21,S3,us-west-2,,5.99
+2026-09-21,EBS,us-east-1,platform,52.24
+2026-09-21,EBS,us-west-2,,15.24
+2026-09-21,Lambda,us-east-1,,8.16
+2026-09-21,Lambda,us-west-2,search,3.48
+2026-09-21,CloudFront,us-east-1,search,26.12
+2026-09-21,CloudFront,us-west-2,search,9.79
+2026-09-21,NAT Gateway,us-east-1,platform,39.18
+2026-09-21,NAT Gateway,us-west-2,search,15.24
+2026-09-21,DynamoDB,us-east-1,payments,19.59
+2026-09-21,DynamoDB,us-west-2,,6.96
+2026-09-22,EC2,us-east-1,payments,453.91
+2026-09-22,EC2,us-west-2,,102.67
+2026-09-22,RDS,us-east-1,payments,201.02
+2026-09-22,RDS,us-west-2,platform,47.55
+2026-09-22,S3,us-east-1,,11.89
+2026-09-22,S3,us-west-2,,5.94
+2026-09-22,EBS,us-east-1,platform,51.88
+2026-09-22,EBS,us-west-2,,15.13
+2026-09-22,Lambda,us-east-1,,8.11
+2026-09-22,Lambda,us-west-2,search,3.46
+2026-09-22,CloudFront,us-east-1,search,25.94
+2026-09-22,CloudFront,us-west-2,search,9.73
+2026-09-22,NAT Gateway,us-east-1,platform,38.91
+2026-09-22,NAT Gateway,us-west-2,search,15.13
+2026-09-22,DynamoDB,us-east-1,payments,19.45
+2026-09-22,DynamoDB,us-west-2,,6.92
+2026-09-23,EC2,us-east-1,payments,439.61
+2026-09-23,EC2,us-west-2,,99.44
+2026-09-23,RDS,us-east-1,payments,194.69
+2026-09-23,RDS,us-west-2,platform,46.05
+2026-09-23,S3,us-east-1,,11.51
+2026-09-23,S3,us-west-2,,5.76
+2026-09-23,EBS,us-east-1,platform,50.24
+2026-09-23,EBS,us-west-2,,14.65
+2026-09-23,Lambda,us-east-1,,7.85
+2026-09-23,Lambda,us-west-2,search,3.35
+2026-09-23,CloudFront,us-east-1,search,25.12
+2026-09-23,CloudFront,us-west-2,search,9.42
+2026-09-23,NAT Gateway,us-east-1,platform,37.68
+2026-09-23,NAT Gateway,us-west-2,search,14.65
+2026-09-23,DynamoDB,us-east-1,payments,18.84
+2026-09-23,DynamoDB,us-west-2,,6.70
+2026-09-24,EC2,us-east-1,payments,420.65
+2026-09-24,EC2,us-west-2,,95.15
+2026-09-24,RDS,us-east-1,payments,186.29
+2026-09-24,RDS,us-west-2,platform,44.07
+2026-09-24,S3,us-east-1,,11.02
+2026-09-24,S3,us-west-2,,5.51
+2026-09-24,EBS,us-east-1,platform,48.07
+2026-09-24,EBS,us-west-2,,14.02
+2026-09-24,Lambda,us-east-1,,7.51
+2026-09-24,Lambda,us-west-2,search,3.20
+2026-09-24,CloudFront,us-east-1,search,24.04
+2026-09-24,CloudFront,us-west-2,search,9.01
+2026-09-24,NAT Gateway,us-east-1,platform,36.06
+2026-09-24,NAT Gateway,us-west-2,search,14.02
+2026-09-24,DynamoDB,us-east-1,payments,18.03
+2026-09-24,DynamoDB,us-west-2,,6.41
+2026-09-25,EC2,us-east-1,payments,405.30
+2026-09-25,EC2,us-west-2,,91.67
+2026-09-25,RDS,us-east-1,payments,179.49
+2026-09-25,RDS,us-west-2,platform,42.46
+2026-09-25,S3,us-east-1,,10.61
+2026-09-25,S3,us-west-2,,5.31
+2026-09-25,EBS,us-east-1,platform,46.32
+2026-09-25,EBS,us-west-2,,13.51
+2026-09-25,Lambda,us-east-1,,7.24
+2026-09-25,Lambda,us-west-2,search,3.09
+2026-09-25,CloudFront,us-east-1,search,23.16
+2026-09-25,CloudFront,us-west-2,search,8.68
+2026-09-25,NAT Gateway,us-east-1,platform,34.74
+2026-09-25,NAT Gateway,us-west-2,search,13.51
+2026-09-25,DynamoDB,us-east-1,payments,17.37
+2026-09-25,DynamoDB,us-west-2,,6.18
+2026-09-26,EC2,us-east-1,payments,399.78
+2026-09-26,EC2,us-west-2,,90.43
+2026-09-26,RDS,us-east-1,payments,177.05
+2026-09-26,RDS,us-west-2,platform,41.88
+2026-09-26,S3,us-east-1,,10.47
+2026-09-26,S3,us-west-2,,5.24
+2026-09-26,EBS,us-east-1,platform,45.69
+2026-09-26,EBS,us-west-2,,13.33
+2026-09-26,Lambda,us-east-1,,7.14
+2026-09-26,Lambda,us-west-2,search,3.05
+2026-09-26,CloudFront,us-east-1,search,22.84
+2026-09-26,CloudFront,us-west-2,search,8.57
+2026-09-26,NAT Gateway,us-east-1,platform,34.27
+2026-09-26,NAT Gateway,us-west-2,search,13.33
+2026-09-26,DynamoDB,us-east-1,payments,17.13
+2026-09-26,DynamoDB,us-west-2,,6.09
+2026-09-27,EC2,us-east-1,payments,405.44
+2026-09-27,EC2,us-west-2,,91.71
+2026-09-27,RDS,us-east-1,payments,179.55
+2026-09-27,RDS,us-west-2,platform,42.47
+2026-09-27,S3,us-east-1,,10.62
+2026-09-27,S3,us-west-2,,5.31
+2026-09-27,EBS,us-east-1,platform,46.34
+2026-09-27,EBS,us-west-2,,13.51
+2026-09-27,Lambda,us-east-1,,7.24
+2026-09-27,Lambda,us-west-2,search,3.09
+2026-09-27,CloudFront,us-east-1,search,23.17
+2026-09-27,CloudFront,us-west-2,search,8.69
+2026-09-27,NAT Gateway,us-east-1,platform,34.75
+2026-09-27,NAT Gateway,us-west-2,search,13.51
+2026-09-27,DynamoDB,us-east-1,payments,17.38
+2026-09-27,DynamoDB,us-west-2,,6.18
+2026-09-28,EC2,us-east-1,payments,418.20
+2026-09-28,EC2,us-west-2,,94.59
+2026-09-28,RDS,us-east-1,payments,185.20
+2026-09-28,RDS,us-west-2,platform,43.81
+2026-09-28,S3,us-east-1,,10.95
+2026-09-28,S3,us-west-2,,5.48
+2026-09-28,EBS,us-east-1,platform,47.79
+2026-09-28,EBS,us-west-2,,13.94
+2026-09-28,Lambda,us-east-1,,7.47
+2026-09-28,Lambda,us-west-2,search,3.19
+2026-09-28,CloudFront,us-east-1,search,23.90
+2026-09-28,CloudFront,us-west-2,search,8.96
+2026-09-28,NAT Gateway,us-east-1,platform,35.85
+2026-09-28,NAT Gateway,us-west-2,search,13.94
+2026-09-28,DynamoDB,us-east-1,payments,17.92
+2026-09-28,DynamoDB,us-west-2,,6.37
+2026-09-29,EC2,us-east-1,payments,430.64
+2026-09-29,EC2,us-west-2,,97.41
+2026-09-29,RDS,us-east-1,payments,190.71
+2026-09-29,RDS,us-west-2,platform,45.11
+2026-09-29,S3,us-east-1,,11.28
+2026-09-29,S3,us-west-2,,5.64
+2026-09-29,EBS,us-east-1,platform,49.22
+2026-09-29,EBS,us-west-2,,14.35
+2026-09-29,Lambda,us-east-1,,7.69
+2026-09-29,Lambda,us-west-2,search,3.28
+2026-09-29,CloudFront,us-east-1,search,24.61
+2026-09-29,CloudFront,us-west-2,search,9.23
+2026-09-29,NAT Gateway,us-east-1,platform,110.73
+2026-09-29,NAT Gateway,us-west-2,search,14.35
+2026-09-29,DynamoDB,us-east-1,payments,18.46
+2026-09-29,DynamoDB,us-west-2,,6.56
+2026-09-30,EC2,us-east-1,payments,435.58
+2026-09-30,EC2,us-west-2,,98.53
+2026-09-30,RDS,us-east-1,payments,192.90
+2026-09-30,RDS,us-west-2,platform,45.63
+2026-09-30,S3,us-east-1,,11.41
+2026-09-30,S3,us-west-2,,5.70
+2026-09-30,EBS,us-east-1,platform,49.78
+2026-09-30,EBS,us-west-2,,14.52
+2026-09-30,Lambda,us-east-1,,7.78
+2026-09-30,Lambda,us-west-2,search,3.32
+2026-09-30,CloudFront,us-east-1,search,24.89
+2026-09-30,CloudFront,us-west-2,search,9.33
+2026-09-30,NAT Gateway,us-east-1,platform,112.02
+2026-09-30,NAT Gateway,us-west-2,search,14.52
+2026-09-30,DynamoDB,us-east-1,payments,18.67
+2026-09-30,DynamoDB,us-west-2,,6.64
