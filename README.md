@@ -1,3 +1,11 @@
-# gauntlet-app-demo
+# Ship Log
 
-Demo repo for a Cursor cloud agents session. A cloud agent builds a small app here from this README and AGENTS.md, then opens a pull request.
+A small log for what you shipped each day. Entries stay in `localStorage`.
+
+## Run
+
+```bash
+npm install
+npm test
+npm run dev -- --host 0.0.0.0 --port 5173
+```
