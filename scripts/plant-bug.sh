@@ -52,7 +52,7 @@ if [ -n "$TARGET" ]; then
   # Pass A: the division on a line that names the percentage (never the "=== 0" guard).
   perl -pi -e '
     BEGIN { %c = (previousUsd=>"currentUsd", previous=>"current", prevUsd=>"currUsd", prev=>"curr"); }
-    if (!$done && /(changePct|pctChange|percentChange|changePercent|Pct\b|Percent\b)/) {
+    if (!$done && /(pct|percent)/i) {
       $done = 1 if s{/\s*(\(?\s*)(previousUsd|previous|prevUsd|prev)\b}{"/ $1$c{$2}"}e;
     }
   ' "$TARGET"
