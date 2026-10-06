@@ -40,7 +40,7 @@ export function weekOverWeek(rows: CostRow[]): WeekOverWeek | null {
   }
 
   const changeUsd = currentUsd - previousUsd;
-  const changePct = previousUsd === 0 ? null : changeUsd / previousUsd;
+  const changePct = previousUsd === 0 ? null : changeUsd / currentUsd;
 
   return { currentUsd, previousUsd, changeUsd, changePct, currentStart, currentEnd, previousStart, previousEnd };
 }
