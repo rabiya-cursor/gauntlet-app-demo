@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ship Log</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="mast">
+        <p class="eyebrow">Builder log</p>
+        <h1>Ship Log</h1>
+        <p class="lede">Record what you shipped each day.</p>
+      </header>
+
+      <form id="entry-form" class="card" novalidate>
+        <div class="field">
+          <label for="title">Title</label>
+          <input id="title" name="title" type="text" autocomplete="off" required />
+        </div>
+        <div class="field">
+          <label for="link">Link <span class="optional">optional</span></label>
+          <input id="link" name="link" type="text" inputmode="url" placeholder="https://" autocomplete="off" />
+        </div>
+        <div class="split">
+          <div class="field">
+            <label for="tag">Tag</label>
+            <select id="tag" name="tag"></select>
+          </div>
+          <div class="field">
+            <label for="date">Date</label>
+            <input id="date" name="date" type="date" required />
+          </div>
+        </div>
+        <p id="form-error" class="error" role="alert" hidden></p>
+        <button type="submit">Add entry</button>
+      </form>
+
+      <section class="list-section" aria-labelledby="log-heading">
+        <div class="toolbar">
+          <h2 id="log-heading">Entries</h2>
+          <label class="filter" for="tag-filter">
+            Tag
+            <select id="tag-filter">
+              <option value="all">All</option>
+            </select>
+          </label>
+          <p id="shown-count" class="count"></p>
+        </div>
+        <ul id="entry-list" class="entries"></ul>
+        <p id="empty-state" class="empty" hidden>Nothing shipped for this filter yet.</p>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
