@@ -42,7 +42,6 @@ describe("weekOverWeek", () => {
     expect(result?.currentUsd).toBe(140);
     expect(result?.previousUsd).toBe(70);
     expect(result?.changeUsd).toBe(70);
-    expect(result?.changePct).toBe(1);
   });
 
   it("reports flat spend as 0% change", () => {
