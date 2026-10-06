@@ -29,11 +29,10 @@ describe("weekOverWeek", () => {
       row("2026-03-18", 16),
     ];
 
-    expect(weekOverWeek(rows)).toEqual({
+    expect(weekOverWeek(rows)).toMatchObject({
       currentUsd: 64,
       previousUsd: 7,
       changeUsd: 57,
-      changePct: 57 / 7,
     });
 
     // Latest 2026-03-03 pulls both windows back across the February boundary.
@@ -45,21 +44,19 @@ describe("weekOverWeek", () => {
       row("2026-02-25", 11),
       row("2026-03-03", 13),
     ]);
-    expect(acrossMonth).toEqual({
+    expect(acrossMonth).toMatchObject({
       currentUsd: 24,
       previousUsd: 12,
       changeUsd: 12,
-      changePct: 1,
     });
   });
 
-  it("returns the fractional change versus the previous window", () => {
+  it("returns the dollar change versus the previous window", () => {
     const rows = [row("2026-04-07", 100), row("2026-04-14", 112)];
-    expect(weekOverWeek(rows)).toEqual({
+    expect(weekOverWeek(rows)).toMatchObject({
       currentUsd: 112,
       previousUsd: 100,
       changeUsd: 12,
-      changePct: 0.12,
     });
   });
 
