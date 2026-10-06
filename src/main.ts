@@ -7,6 +7,7 @@ import { formatDay, formatPercent, formatPeriod, formatRatio, formatUsd } from "
 import { savingsIdeas } from "./lib/savings";
 import { clearUploadedCsv, loadFilters, loadUploadedCsv, saveFilters, saveUploadedCsv } from "./lib/storage";
 import { ALL, UNTAGGED, type CostRow, type Filters } from "./lib/types";
+import { weekOverWeek } from "./lib/weekOverWeek";
 
 const appRoot = document.querySelector<HTMLElement>("#app");
 if (!appRoot) throw new Error("Missing #app");
@@ -81,6 +82,7 @@ function render(): void {
   const teams = spendByTeam(filtered);
   const anomalies = detectAnomalies(filtered);
   const ideas = savingsIdeas(filtered);
+  const wow = weekOverWeek(filtered);
 
   const masthead = document.createElement("header");
   masthead.className = "masthead";
@@ -153,6 +155,7 @@ function render(): void {
       formatPercent(summary.untaggedShare),
       `${formatUsd(summary.untaggedUsd)} with an empty team tag`,
     ),
+    card("Last 7 days", wow ? formatUsd(wow.currentUsd) : "—", weekOverWeekNote(wow)),
   );
 
   const charts = document.createElement("div");
@@ -218,6 +221,13 @@ function selectField(labelText: string, value: string, options: Array<[string, s
   select.addEventListener("change", () => onChange(select.value));
   label.append(select);
   return label;
+}
+
+function weekOverWeekNote(wow: ReturnType<typeof weekOverWeek>): string {
+  if (!wow) return "Nothing matches these filters";
+  const sign = wow.changeUsd > 0 ? "+" : "";
+  const pct = wow.changePct === null ? "new spend" : `${sign}${formatPercent(wow.changePct)}`;
+  return `${sign}${formatUsd(wow.changeUsd)} (${pct}) vs previous 7 days`;
 }
 
 function card(kicker: string, value: string, note: string): HTMLElement {
