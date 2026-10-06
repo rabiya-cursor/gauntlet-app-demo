@@ -7,6 +7,7 @@ import { formatDay, formatPercent, formatPeriod, formatRatio, formatUsd } from "
 import { savingsIdeas } from "./lib/savings";
 import { clearUploadedCsv, loadFilters, loadUploadedCsv, saveFilters, saveUploadedCsv } from "./lib/storage";
 import { ALL, UNTAGGED, type CostRow, type Filters } from "./lib/types";
+import { weekOverWeek, type WeekOverWeek } from "./lib/weekOverWeek";
 
 const appRoot = document.querySelector<HTMLElement>("#app");
 if (!appRoot) throw new Error("Missing #app");
@@ -78,6 +79,7 @@ function render(): void {
   app.replaceChildren();
   const filtered = applyFilters(rows, filters);
   const summary = summarize(filtered);
+  const week = weekOverWeek(filtered);
   const services = spendByService(filtered);
   const teams = spendByTeam(filtered);
   const anomalies = detectAnomalies(filtered);
@@ -156,6 +158,7 @@ function render(): void {
       formatPercent(summary.untaggedShare),
       `${formatUsd(summary.untaggedUsd)} with an empty team tag`,
     ),
+    card("Last 7 days", formatUsd(week?.currentUsd ?? 0), weekNote(week)),
   );
 
   const charts = document.createElement("div");
@@ -220,6 +223,14 @@ function selectField(labelText: string, value: string, options: Array<[string, s
   select.addEventListener("change", () => onChange(select.value));
   label.append(select);
   return label;
+}
+
+function weekNote(week: WeekOverWeek | null): string {
+  if (!week) return "Nothing matches these filters";
+  const dollars = week.changeUsd > 0 ? `+${formatUsd(week.changeUsd)}` : formatUsd(week.changeUsd);
+  if (week.changePct === null) return `${dollars} vs previous 7 days`;
+  const percent = week.changePct > 0 ? `+${formatPercent(week.changePct)}` : formatPercent(week.changePct);
+  return `${dollars} (${percent}) vs previous 7 days`;
 }
 
 function card(kicker: string, value: string, note: string): HTMLElement {
