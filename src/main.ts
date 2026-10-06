@@ -98,7 +98,11 @@ toolbar.append(filterLabel, count);
 const list = document.createElement("ul");
 list.className = "list";
 
-app.append(masthead, sheet, toolbar, list);
+const empty = document.createElement("p");
+empty.className = "empty";
+empty.hidden = true;
+
+app.append(masthead, sheet, toolbar, list, empty);
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -152,15 +156,15 @@ function render(): void {
   list.replaceChildren();
 
   if (shown.length === 0) {
-    const empty = document.createElement("p");
-    empty.className = "empty";
+    empty.hidden = false;
     empty.textContent =
       entries.length === 0
         ? "Nothing here yet. Log the first thing you ship."
         : "No entries for this tag.";
-    list.append(empty);
     return;
   }
+
+  empty.hidden = true;
 
   for (const entry of shown) {
     list.append(renderEntry(entry));
