@@ -1,5 +1,6 @@
 import { addEntry, countLabel, deleteEntry, visibleEntries, type TagFilter } from "./lib/entries";
 import { loadEntries, saveEntries } from "./lib/storage";
+import { loadTheme, saveTheme, toggleTheme, type Theme } from "./lib/theme";
 import { TAGS, type ShipEntry, type Tag } from "./lib/types";
 import { todayISO } from "./lib/validate";
 
@@ -8,6 +9,8 @@ if (!app) throw new Error("Missing #app");
 
 let entries = loadEntries(localStorage);
 let filter: TagFilter = "all";
+let theme = loadTheme(localStorage, window.matchMedia("(prefers-color-scheme: dark)").matches);
+applyTheme(theme);
 
 const tagOptions = TAGS.map(
   (tag) => `<option value="${tag}">${labelFor(tag)}</option>`,
@@ -16,7 +19,10 @@ const tagOptions = TAGS.map(
 app.innerHTML = `
   <main class="log">
     <header class="mast">
-      <p class="eyebrow">Daily builder log</p>
+      <div class="mast-bar">
+        <p class="eyebrow">Daily builder log</p>
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
+      </div>
       <h1>Ship Log</h1>
       <p class="lede">Write down what left the dock. Titles are required. Links, when you have them, need to be http or https.</p>
     </header>
@@ -74,8 +80,17 @@ const filterEl = app.querySelector<HTMLSelectElement>("#tag-filter")!;
 const countEl = app.querySelector<HTMLParagraphElement>("#count")!;
 const listEl = app.querySelector<HTMLUListElement>("#list")!;
 const emptyEl = app.querySelector<HTMLParagraphElement>("#empty")!;
+const themeToggle = app.querySelector<HTMLButtonElement>("#theme-toggle")!;
 
 dateInput.value = todayISO();
+syncThemeToggle();
+
+themeToggle.addEventListener("click", () => {
+  theme = toggleTheme(theme);
+  saveTheme(localStorage, theme);
+  applyTheme(theme);
+  syncThemeToggle();
+});
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -138,6 +153,17 @@ function renderEntry(entry: ShipEntry): string {
       <button type="button" class="delete" data-id="${escapeAttr(entry.id)}">Delete</button>
     </li>
   `;
+}
+
+function applyTheme(next: Theme): void {
+  document.documentElement.dataset.theme = next;
+  document.documentElement.style.colorScheme = next;
+}
+
+function syncThemeToggle(): void {
+  const dark = theme === "dark";
+  themeToggle.setAttribute("aria-pressed", String(dark));
+  themeToggle.textContent = dark ? "Light mode" : "Dark mode";
 }
 
 function showError(message: string): void {
